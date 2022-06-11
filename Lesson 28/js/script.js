@@ -59,46 +59,50 @@
 // console.log(minutes);
 
 // Место для первой задачи
-function getTimeFromMinutes(num) {
-    let hours,
-    minutes;
-    let result = '';
+// function getTimeFromMinutes(num) {
+//     let hours,
+//     minutes;
+//     let result = '';
 
     
 
 
-    if ( typeof(num) !== 'number' || num < 0 || !Number.isInteger(num)){
-        return 'Ошибка, Проверьте данные';
-    } else if (num === 0) {
-        return 'Это 0 часов и 0 минут';
-    } else {
-        hours = Math.floor(num/60);
-        minutes = num - hours*60;
+//     if ( typeof(num) !== 'number' || num < 0 || !Number.isInteger(num)){
+//         return 'Ошибка, Проверьте данные';
+//     } else if (num === 0) {
+//         return 'Это 0 часов и 0 минут';
+//     } else {
+//         hours = Math.floor(num/60);
+//         minutes = num - hours*60;
         
-        if (hours === 0){
-            result += 'Это 0 часов';
-        } else if (hours === 1) {
-            result += 'Это 1 час';
-        } else if ( hours >=2 && hours <= 4) {
-            result += `Это ${hours} часа`;
-        } else if (hours >= 5 && hours <= 10){
-            result += `Это ${hours} часов`;
-        }
+//         if (hours === 0){
+//             result += 'Это 0 часов';
+//         } else if (hours === 1) {
+//             result += 'Это 1 час';
+//         } else if ( hours >=2 && hours <= 4) {
+//             result += `Это ${hours} часа`;
+//         } else if (hours >= 5 && hours <= 10){
+//             result += `Это ${hours} часов`;
+//         }
 
-        if (minutes === 11) {
-            result += ' и 11 минут';
-        } else if (minutes % 10 === 0){
-            result += ` и ${minutes} минут`
-        } else if (minutes % 10 === 1) {
-            result += ` и ${minutes} минутa`;
-        }  else if (minutes % 10 >= 2 && minutes % 10 <= 4) {
-            result += ` и ${minutes} минуты`;
-        } else if (minutes % 10 >= 5 && minutes % 10 <= 9){
-            result += ` и ${minutes} минут`;
-        }
+//         if (minutes === 11) {
+//             result += ' и 11 минут';
+//         } else if (minutes % 10 === 0){
+//             result += ` и ${minutes} минут`
+//         } else if (minutes % 10 === 1) {
+//             result += ` и ${minutes} минутa`;
+//         }  else if (minutes % 10 >= 2 && minutes % 10 <= 4) {
+//             result += ` и ${minutes} минуты`;
+//         } else if (minutes % 10 >= 5 && minutes % 10 <= 9){
+//             result += ` и ${minutes} минут`;
+//         }
 
-        return result;
-    }
+//         return result;
+//     }
+// }
+
+// console.log(getTimeFromMinutes(151));
+
+function findMaxNumber(a,b,c,d) {
+    if ( typeof(num) !== 'number' || num < 0 || !Number.isInteger(num)){
 }
-
-console.log(getTimeFromMinutes(151));
