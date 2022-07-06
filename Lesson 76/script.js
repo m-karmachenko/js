@@ -64,5 +64,22 @@
 const btn = document.querySelector('button');
 
 btn.addEventListener('click', function(){
-    console.log(this);
+    this.style.backgroundColor = 'red';
 });
+
+// btn.addEventListener('click', (e) => {
+//     console.log(e.target);
+// });
+
+const obj = {
+    num: 5,
+    sayNumber: function(){
+        const say = () => {
+            console.log(this);
+        };
+
+        say();
+    }
+};
+
+obj.sayNumber();
